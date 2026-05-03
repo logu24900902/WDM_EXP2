@@ -1,5 +1,4 @@
 ### EX2 Generating Association Rules for Employee dataset using Apriori Algorithm
-### DATE: 
 ### AIM: To generate associate rules for the employee dataset using Apriori Algorithm.
 ### Description:
 In data mining, association rule learning is a popular and well researched method for discovering interesting
@@ -12,28 +11,30 @@ Creation of Buying Table:
 2) Type the following training data set with the help of Notepad for Buying Table.
 
 ```
-@relation buying
-@attribute age {L20,20-40,G40}
-@attribute income {high,medium,low}
-@attribute stud {yes,no}
-@attribute creditrate {fair,excellent}
-@attribute buyscomp {yes,no}
+@relation buys_computer
+
+@attribute age {<=20,20-40,>40}
+@attribute income {low,medium,high}
+@attribute student {yes,no}
+@attribute credit_rating {fair,excellent}
+@attribute buys_computer {yes,no}
+
 @data
-L20,high,no,fair,yes
+<=20,high,no,fair,no
 20-40,low,yes,fair,yes
-G40,medium,yes,fair,yes
-L20,low,no,fair,no
-G40,high,no,excellent,yes
-L20,low,yes,fair,yes
+>40,medium,yes,fair,yes
+<=20,low,no,fair,no
+>40,high,no,excellent,yes
+<=20,low,yes,fair,yes
 20-40,high,yes,excellent,no
-G40,low,no,fair,yes
-L20,high,yes,excellent,yes
-G40,high,no,fair,yes
-L20,low,yes,excellent,no
-G40,high,yes,excellent,no
+>40,low,no,fair,yes
+<=20,high,yes,excellent,yes
+>40,high,no,fair,yes
+<=20,low,yes,excellent,no
+>40,high,yes,excellent,no
 20-40,medium,yes,excellent,yes
-L20,medium,yes,fair,yes
-G40,high,yes,excellent,yes
+<=20,medium,yes,fair,yes
+>40,high,yes,excellent,yes
 ```
 3) After that the file is saved with .arff file format.
 4) Minimize the arff file and then open Start -> Programs -> weka-3-4.
@@ -42,6 +43,9 @@ G40,high,yes,excellent,yes
 7) Explorer shows many options. In that click on ‘open file’ and select the arff file
 8) Click on edit button which shows buying table on weka.
 ### OUTPUT:
+<img width="1232" height="730" alt="image" src="https://github.com/user-attachments/assets/80e483ee-40cf-4517-a079-c1c93d0a548e" />
+
+
 
 
 ### Procedure for Association Rules:
@@ -53,5 +57,9 @@ G40,high,yes,excellent,yes
 6) Click on Start button and output will be displayed on the right side of the window.
 
 ### OUTPUT:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/dfe29d30-1167-46d7-b1fb-08dfe5e2c317" />
+
+
 
 ### RESULT: 
+thus the code was errorless and runed successfully
